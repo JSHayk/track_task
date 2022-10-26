@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Task</title>
+    <script src="./index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+  </head>
+  <body>
+    <div id="root">
+      <form id="add-form">
+        <h1>Add Student</h1>
+        <section id="fields">
+          <div class="field">
+            <label for="first-name" class="field-label">First Name</label>
+            <input
+              id="first-name"
+              class="field-input first-name"
+              type="text"
+              placeholder="Joe"
+            />
+          </div>
+          <div class="field">
+            <label for="last-name" class="field-label">Last Name</label>
+            <input
+              id="last-name"
+              class="field-input last-name"
+              type="text"
+              placeholder="Smith"
+            />
+          </div>
+          <div class="field">
+            <label for="email" class="field-label">Email Address</label>
+            <input
+              id="email"
+              class="field-input email"
+              type="text"
+              placeholder="joesmith@gmail.com"
+            />
+          </div>
+          <div class="field">
+            <label for="phone" class="field-label">Phone Number</label>
+            <input
+              id="phone"
+              class="field-input phone"
+              type="text"
+              placeholder="(999) 999-9999"
+            />
+          </div>
+          <div class="field">
+            <label for="date-of-birth" class="field-label">Date Of Birth</label>
+            <input
+              id="date-of-birth"
+              class="field-input date-of-birth"
+              type="text"
+              placeholder="01/01/2000"
+            />
+          </div>
+          <div class="field">
+            <label for="">Favorite Sports</label>
+            <div class="checkbox-container">
+              <label for="running">running</label>
+              <input type="checkbox" class="running" />
+            </div>
+            <div class="checkbox-container">
+              <label for="swimming">swimming</label>
+              <input type="checkbox" class="swimming" />
+            </div>
+          </div>
+        </section>
+        <div class="form-button-container">
+          <button class="form-button">Add</button>
+        </div>
+      </form>
+      <form id="edit-form">
+        <h1>Edit Student</h1>
+        <section id="fields">
+          <div class="field">
+            <label for="first-name" class="field-label">First Name</label>
+            <input
+              id="first-name"
+              class="field-input edit-first-name"
+              type="text"
+              placeholder="Joe"
+            />
+          </div>
+          <div class="field">
+            <label for="last-name" class="field-label">Last Name</label>
+            <input
+              id="last-name"
+              class="field-input edit-last-name"
+              type="text"
+              placeholder="Smith"
+            />
+          </div>
+          <div class="field">
+            <label for="email" class="field-label">Email Address</label>
+            <input
+              id="email"
+              class="field-input edit-email"
+              type="text"
+              placeholder="joesmith@gmail.com"
+            />
+          </div>
+          <div class="field">
+            <label for="phone" class="field-label">Phone Number</label>
+            <input
+              id="phone"
+              class="field-input edit-phone"
+              type="text"
+              placeholder="(999) 999-9999"
+            />
+          </div>
+          <div class="field">
+            <label for="date-of-birth" class="field-label">Date Of Birth</label>
+            <input
+              id="date-of-birth"
+              class="field-input edit-date-of-birth"
+              type="text"
+              placeholder="01/01/2000"
+            />
+          </div>
+          <div class="field">
+            <label for="">Favorite Sports</label>
+            <div class="checkbox-container">
+              <label for="running">running</label>
+              <input type="checkbox" id="running" class="edit-running" />
+            </div>
+            <div class="checkbox-container">
+              <label for="swimming">swimming</label>
+              <input type="checkbox" id="swimming" class="edit-swimming" />
+            </div>
+          </div>
+        </section>
+        <div class="form-button-container">
+          <button class="form-button cancel-button">Cancel</button>
+          <button type="button" class="form-button">Edit</button>
+        </div>
+      </form>
+      <ul id="students-records-table">
+        <li class="students-records-table-head">
+          <h1>F.Name</h1>
+          <h1>L.Name</h1>
+          <h1>Email</h1>
+          <h1>Phone</h1>
+          <h1>Date</h1>
+          <h1>Favorite Sports</h1>
+          <h1 class="empty"></h1>
+        </li>
+        <li class="students-records-table-content">
+          <div class="students-records-row">
+            <p>F. Name</p>
+            <p>L. Name</p>
+            <p>Email</p>
+            <p>Phone</p>
+            <p>Date</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

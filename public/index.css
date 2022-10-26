@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#root {
+  background-color: rgba(36, 105, 92, 0.1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+}
+/* Form */
+
+form {
+  padding: 24px;
+  background-color: #fff;
+  width: 450px;
+  border-radius: 10px;
+  box-sizing: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#edit-form {
+  display: none;
+}
+
+#fields {
+  padding: 12px 0 12px 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field:not(:first-child) {
+  margin-top: 18px;
+}
+
+.field-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(89, 102, 122);
+}
+
+.field-input {
+  margin-top: 2px;
+  height: 38px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: rgb(243, 243, 255);
+  padding: 6px;
+  font-size: 16px;
+}
+
+.form-button-container {
+  display: flex;
+  justify-content: end;
+  margin-top: 16px;
+}
+
+.form-button {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(36, 105, 92);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Students Records */
+
+#students-records-table {
+  min-height: 300px;
+  margin-left: 4%;
+  max-width: 1100px;
+}
+
+/* Table Head */
+.students-records-table-head {
+  display: flex;
+  align-items: center;
+  background-color: #36304a;
+  padding: 12px 0 12px 0;
+  border-radius: 6px 6px 0 0;
+}
+
+.students-records-table-head h1 {
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+/* Table Content */
+
+.students-records-table-content {
+  background-color: #fff;
+  min-height: 496px;
+  border-radius: 0 0 6px 6px;
+}
+
+/* Content */
+
+.students-records-row {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 8px 0 8px 0;
+}
+
+.students-records-row:not(:first-child) {
+  border-top: solid 2px #fff;
+}
+
+.students-records-row p {
+  text-align: center;
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.edit {
+  display: flex;
+  padding: 0 4px 0 4px;
+}
+
+.edit-tool {
+  margin: 0 2px 0 2px;
+  cursor: pointer;
+  background-image: url("./edit.png");
+  width: 24px;
+  height: 24px;
+}
+
+.delete-tool {
+  margin: 0 2px 0 8px;
+  cursor: pointer;
+  background-image: url("./delete.png");
+  width: 24px;
+  height: 24px;
+}
+
+.cancel-button {
+  background-color: red;
+  margin-right: 12px;
+}
